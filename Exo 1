@@ -1,0 +1,18 @@
+#Exo 1
+
+#Récolter une valeur porte monnaie
+wallet = input("Saisir une valeur :")
+print("Tu possède ", int(wallet), "€")
+
+
+#Crééer un produit d'une valeur de 50e
+objet = 50
+print("L'objet coûte :", int(objet), "€")
+
+
+#Achat
+wallet = int(wallet)-int(objet)
+
+
+#Afficher la nouvelle valeur après l'achat
+print("Après achat de l'objet, ton porte monnaie est de :", int(wallet), "€")
