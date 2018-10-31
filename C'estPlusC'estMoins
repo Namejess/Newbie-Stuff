@@ -1,0 +1,29 @@
+#Jeu du plus ou moins
+#Règle du jeu : deviner le nombre mystère
+
+import random
+
+#init
+nombreMystere = random.randint(1, 50)
+nombreEntre = 0
+
+if __name__ == '__main__':
+#début du jeu
+
+print("JEU DU NOMBRE MYSTERE !")
+
+#Boucle
+
+
+while (nombreEntre != nombreMystere):
+    print ("Entrez un nombre entre 1 et 50 :")
+    nombreEntre = int(input())
+
+    if(nombreEntre > nombreMystere):
+        print("C'est moins !")
+
+    elif(nombreEntre < nombreMystere):
+        print("C'est plus !")
+
+else:
+    print("NOICE")
